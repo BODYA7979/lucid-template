@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify');
 const csso = require('gulp-csso');
 const del = require('del');
 const webServerPort = 54234;
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles', function () {
   return gulp.src('./assets/scss/app.scss')
@@ -16,6 +17,9 @@ gulp.task('styles', function () {
           onError: console.error.bind(console, 'Sass error:')
       }))
       .pipe(include())
+      .pipe(autoprefixer({
+          cascade: false
+      }))
       .pipe(csso())
       .pipe(gulp.dest('./assets/dist/css'));
 });

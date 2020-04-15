@@ -1,5 +1,5 @@
 #section-prices-comments {
-  background: $black url(../../images/comments_bg.png) center no-repeat;
+  background: $black url(/assets/images/comments_bg.png) center no-repeat;
   background-size: cover;
 
   .prices-title {
@@ -120,60 +120,65 @@
 
   .prices-list-pricelist {
     margin: 70px 0 0;
+    .pricelist__item {
+      .prices-list-pricelist-item-title {
+        text-align: center;
+        border: 1px solid #e0e0e0;
 
-    .prices-list-pricelist-item-title {
-      text-align: center;
-      border: 1px solid #e0e0e0;
-
-      p {
-        text-transform: uppercase;
-        font-family: $sspbold;
-        font-size: 24px;
-        line-height: 70px;
-      }
-    }
-
-    .prices-list-pricelist-item-price {
-      text-align: center;
-      border: 1px solid #e0e0e0;
-      border-top: none;
-      height: 150px;
-
-      .prices-list-pricelist-item-price-int {
-        height: 89px;
-        display: flex;
-        justify-content: center;
+        p {
+          text-transform: uppercase;
+          font-family: $sspbold;
+          font-size: 24px;
+          line-height: 70px;
+        }
       }
 
-      .prices-list-pricelist-item-price-int-dollar {
-        font-family: $sspsemibold;
-        font-size: 29px;
-        display: block;
-        line-height: 109px;
+      .prices-list-pricelist-item-price {
+        text-align: center;
+        border: 1px solid #e0e0e0;
+        border-top: none;
+        height: 150px;
+
+        .prices-list-pricelist-item-price-int {
+          height: 89px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .prices-list-pricelist-item-price-int-dollar {
+          font-family: $sspsemibold;
+          font-size: 29px;
+          display: block;
+          line-height: 109px;
+        }
+
+        .prices-list-pricelist-item-price-int-amount {
+          font-family: $sspsemibold;
+          font-size: 60px;
+          line-height: 124px;
+        }
       }
 
-      .prices-list-pricelist-item-price-int-amount {
-        font-family: $sspsemibold;
-        font-size: 60px;
-        line-height: 124px;
+      .prices-list-pricelist-item-desc {
+        text-align: center;
+        padding: 45px 30px 27px;
+        border: 1px solid #e0e0e0;
+        border-top: none;
+
+        a {
+          color: $blue;
+        }
+
+        button {
+          color: $blue;
+          margin: 41px 0 0;
+        }
       }
-    }
 
-    .prices-list-pricelist-item-desc {
-      text-align: center;
-      padding: 45px 30px 27px;
-      border: 1px solid #e0e0e0;
-      border-top: none;
-
-      a {
-        color: $blue;
-      }
-
-      button {
-        color: $blue;
-        margin: 41px 0 0;
-
-        &:hover {
+      &:hover {
+        .prices-list-pricelist-item-desc button,
+        .prices-list-pricelist-item-price,
+        .prices-list-pricelist-item-price .p, {
           background-color: $blue;
           color: $white;
         }
