@@ -1,0 +1,31 @@
+#section-footer {
+  padding: 55px 0 40px;
+  background-color: $black;
+
+  .footer-icons {
+    text-align: center;
+
+    .fa {
+      padding: 0 17px;
+      color: $dark_grey;
+      font-weight: 700;
+      transition: color .2s ease;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  .footer-copyright {
+    margin-top: 18px;
+    text-align: center;
+
+    p {
+      color: $dark_grey;
+      text-transform: uppercase;
+      font-family: $sspsemibold;
+      font-size: 14px;
+    }
+  }
+}

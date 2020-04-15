@@ -1,0 +1,183 @@
+#section-prices-comments {
+  background: $black url(../../images/comments_bg.png) center no-repeat;
+  background-size: cover;
+
+  .prices-title {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    padding-top: 61px;
+  }
+
+  h2 {
+    color: $white;
+    margin-top: 11px;
+    position: relative;
+
+    &:after {
+      @extend %underline;
+      margin: 28px auto 0;
+    }
+  }
+
+  .slider {
+    margin-top: 87px;
+    width: 100%;
+
+    .slider-item {
+      padding-left: 2px;
+    }
+
+    .slider-item-txt-p {
+      color: $white;
+      font-family: $sspitalic;
+      font-size: 24px;
+      line-height: 32px;
+      padding-right: 30px;
+    }
+
+    .slider-item-author {
+      display: flex;
+      margin-top: 23px;
+    }
+
+    .slider-item-author-icon {
+      width: 59px;
+      height: 59px;
+      overflow: hidden;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    .slider-item-author-info {
+      margin: 4px 0 0 24px;
+    }
+
+    .slider-item-author-info-name {
+      font-family: $sspregular;
+      font-size: 16px;
+      color: $white;
+    }
+
+    .slider-item-author-info-spec {
+      font-family: $sspbold;
+      font-size: 14px;
+      color: $white;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .slick-dots {
+      min-width: 50px;
+      margin: 138px auto 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 60px;
+
+      li {
+        width: 8px;
+        height: 8px;
+        margin: 3px 11px 4px;
+        background-color: transparent;
+        border: 1px solid #999;
+        border-radius: 50%;
+        outline: none;
+        list-style: none;
+        cursor: pointer;
+
+        &.slick-active {
+          width: 14px;
+          height: 14px;
+          margin: 0 8px;
+          background-color: $white;
+          border: none;
+          border-radius: 50%;
+          outline: none;
+        }
+
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#section-prices-list {
+  padding-bottom: 60px;
+
+  .prices-list-title {
+    margin: 60px 0 0;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      @extend %underline;
+      margin: 28px auto 0;
+    }
+  }
+
+  .prices-list-pricelist {
+    margin: 70px 0 0;
+
+    .prices-list-pricelist-item-title {
+      text-align: center;
+      border: 1px solid #e0e0e0;
+
+      p {
+        text-transform: uppercase;
+        font-family: $sspbold;
+        font-size: 24px;
+        line-height: 70px;
+      }
+    }
+
+    .prices-list-pricelist-item-price {
+      text-align: center;
+      border: 1px solid #e0e0e0;
+      border-top: none;
+      height: 150px;
+
+      .prices-list-pricelist-item-price-int {
+        height: 89px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .prices-list-pricelist-item-price-int-dollar {
+        font-family: $sspsemibold;
+        font-size: 29px;
+        display: block;
+        line-height: 109px;
+      }
+
+      .prices-list-pricelist-item-price-int-amount {
+        font-family: $sspsemibold;
+        font-size: 60px;
+        line-height: 124px;
+      }
+    }
+
+    .prices-list-pricelist-item-desc {
+      text-align: center;
+      padding: 45px 30px 27px;
+      border: 1px solid #e0e0e0;
+      border-top: none;
+
+      a {
+        color: $blue;
+      }
+
+      button {
+        color: $blue;
+        margin: 41px 0 0;
+
+        &:hover {
+          background-color: $blue;
+          color: $white;
+        }
+      }
+    }
+  }
+}

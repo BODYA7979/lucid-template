@@ -1,0 +1,127 @@
+#section-header {
+  background: $black url(../../images/header_bg.png) center no-repeat;
+  background-size: cover;
+
+  .header-row {
+    margin-bottom: 24px;
+
+    .logo {
+      padding: 30px 0;
+      a {
+        text-decoration: none;
+      }
+
+      .logo-left {
+        font-family: $quicksand;
+        font-size: 24px;
+        letter-spacing: -.7px;
+        color: $white;
+      }
+
+      .logo-left,
+      .logo-right {
+        text-transform: uppercase;
+        display: inline-block;
+      }
+
+      .logo-right {
+        font-family: $sspregular;
+        color: #7d7e80;
+        font-size: 9px;
+        width: 60px;
+        margin-left: 1px;
+        line-height: 1.22;
+        letter-spacing: 1.2px;
+      }
+    }
+
+    .menu {
+      float: right;
+      margin-top: 28px;
+
+      .navbar {
+        padding: 0;
+        margin: 0;
+
+        .navbar-toggler {
+          color: $white;
+          outline: none;
+        }
+
+        .menu-list {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+
+          .menu-list-item {
+            height: 30px;
+
+            a {
+              color: $white;
+              text-decoration: none;
+              font-family: $sspsemibold;
+              font-size: 16px;
+              padding: 0 12px;
+              position: relative;
+              -webkit-transition: .2s ease;
+              transition: .2s ease;
+              display: block;
+              &:hover {
+                color: #aaa;
+              }
+            }
+
+            &.is-active,
+            &:hover {
+              a {
+                &:after {
+                  @extend %underline;
+                  margin: 5px auto 0;
+                  width: 100% !important;
+                }
+              }
+            }
+
+            &:last-child {
+              a {
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .intro-left {
+    margin-top: 39px;
+
+    .intro-h1 {
+      font-family: $sspsemibold;
+      color: $white;
+      font-size: 48px;
+      margin-top: 20px;
+      line-height: 1em;
+      padding-right: 60px;
+    }
+
+    .intro-p {
+      margin-top: 24px;
+    }
+
+    .buttons {
+      margin-top: 61px;
+
+      button {
+        &:last-child {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+
+  .intro-right {
+    text-align: right;
+    padding: 0 46px;
+  }
+}

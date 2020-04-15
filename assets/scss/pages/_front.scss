@@ -1,0 +1,39 @@
+#section-get-theme-block {
+  background-color: $black;
+
+  .container-xl {
+    display: flex;
+    justify-content: space-between;
+
+    .get-theme-block-text {
+      display: flex;
+      padding: 60px 0;
+    }
+
+    h2 {
+      color: $white;
+
+      &:last-child {
+        font-family: $ssplight;
+        margin-left: 10px;
+      }
+    }
+
+    .get-theme-block-buttons {
+      padding: 60px 0;
+
+      .buttons-trans {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.map {
+  margin-top: -75px;
+  position: relative;
+
+  iframe {
+    width: 100%;
+  }
+}

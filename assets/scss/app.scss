@@ -1,0 +1,40 @@
+// Variables.
+@import "base/variables";
+@import "base/extends";
+@import "base/fonts";
+@import "base/elements";
+
+// Components.
+@import "components/section-header";
+@import "components/section-features";
+@import "components/section-details";
+@import "components/section-prices";
+@import "components/section-contact";
+@import "components/section-footer";
+
+// Pages.
+@import "pages/front";
+
+// Media-queries.
+@import "components/media-queries";
+
+// Slick.
+@import "slick-carousel/slick/slick.scss";
+
+// Font Awesome..
+// rewrite path to icons fonts.
+$fa-font-path:"../../../node_modules/font-awesome/fonts";
+@import "font-awesome/scss/font-awesome.scss";
+
+
+// Bootstrap.
+
+//Rewrite bootstrap container width.
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px
+) !default;
+// And import framework.
+@import "bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,111 @@
+#section-contact {
+  position: relative;
+  background-color: #ededed;
+  padding-top: 62px;
+
+  .contact-title {
+    text-align: center;
+    position: relative;
+  }
+
+  h2 {
+    position: relative;
+
+    &:after {
+      @extend %underline;
+      margin: 28px auto 0;
+    }
+  }
+
+  .contact-contacts {
+    margin: 60px 0 0;
+
+    .contact-contacts-item {
+      max-width: 200px;
+      padding: 0 3px;
+    }
+
+    .contact-contacts-item-icon {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .contact-contacts-item-icon-img {
+      line-height: 50px;
+    }
+
+    .contact-contacts-item-info {
+      text-align: center;
+      padding: 0;
+    }
+  }
+
+  .contact-form {
+    z-index: 1;
+    position: relative;
+    max-width: 770px;
+    padding: 58px 83px 41px 66px;
+    background-color: #1a1a1a;
+    margin: 70px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .contact-form-fields {
+      display: flex;
+      height: 190px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-form-fields-field {
+      height: 50px;
+      width: 300px;
+      background-color: #1a1a1a;
+      font-family: $sspbold;
+      font-size: 14px;
+      border: 1px solid $dark_grey;
+      border-radius: 2px;
+      padding-left: 15px;
+      outline: none;
+      color: $white;
+      transition: .2s ease;
+
+      &::placeholder {
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        border: 1px solid #aaa;
+      }
+    }
+
+    .contact-form-textarea-wrap-textarea {
+      height: 190px;
+      width: 300px;
+      background-color: #1a1a1a;
+      font-family: $sspbold;
+      font-size: 14px;
+      border: 1px solid $dark_grey;
+      border-radius: 2px;
+      padding: 10px 0 0 18px;
+      outline: none;
+      color: $white;
+      transition: .2s ease;
+
+      &::placeholder {
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        border: 1px solid #aaa;
+      }
+    }
+
+    .contact-form-button-wrap {
+      margin-left: auto;
+      margin-top: 13px;
+    }
+  }
+}
